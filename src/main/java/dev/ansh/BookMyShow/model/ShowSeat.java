@@ -20,4 +20,12 @@ public class ShowSeat extends BaseModel {
     private Seat seat;
     @Enumerated(EnumType.STRING)
     private ShowSeatStatus showSeatStatus;
+
+    public ShowSeat(int price, Show show, Seat seat, ShowSeatStatus showSeatStatus) {
+        this.price = price;
+        this.show = show;
+        this.seat = seat;
+        this.showSeatStatus = showSeatStatus;
+    }
+    public ShowSeat() {}
 }
